@@ -1,0 +1,1088 @@
+Using pre-set license
+Built from '2022.2/release' branch; Version is '2022.2.1f1 (4fead5835099) revision 5237461'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'ko' Physical Memory: 16197 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+E:/Unity/LZ_Github/LZ
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+52943
+Successfully changed project path to: E:/Unity/LZ_Github/LZ
+E:/Unity/LZ_Github/LZ
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23588] Host "[IP] 192.168.55.23 [Port] 0 [Flags] 2 [Guid] 2851073608 [EditorId] 2851073608 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6G5TASU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [23588] Host "[IP] 192.168.55.23 [Port] 0 [Flags] 2 [Guid] 2851073608 [EditorId] 2851073608 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6G5TASU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 17.54 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.2.1f1 (4fead5835099)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Unity/LZ_Github/LZ/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   NVIDIA
+    VRAM:     2988 MB
+    Driver:   31.0.15.1694
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.012661 seconds.
+- Loaded All Assemblies, in  0.331 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 225 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.515 seconds
+Domain Reload Profiling:
+	ReloadAssembly (197ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		LoadAllAssembliesAndSetupDomain (0ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (122ms)
+				TypeCache.Initialize (121ms)
+					TypeCache.ScanAssembly (120ms)
+				ResolveRequiredComponents (1ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (453ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (295ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Unity\LZ_Github\LZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Unity\LZ_Github\LZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.591 seconds
+Refreshing native plugins compatible for Editor in 4.39 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.515 seconds
+Domain Reload Profiling:
+	ReloadAssembly (165ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		LoadAllAssembliesAndSetupDomain (424ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (386ms)
+				TypeCache.Initialize (211ms)
+					TypeCache.ScanAssembly (207ms)
+				ResolveRequiredComponents (3ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (384ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 4.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4522 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (83.4 KB). Loaded Objects now: 4962.
+Memory consumption went from 0.67 GB to 0.67 GB.
+Total: 2.714400 ms (FindLiveObjects: 0.253300 ms CreateObjectMapping: 0.114800 ms MarkObjects: 2.240800 ms  DeleteObjects: 0.104800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 429825.413857 seconds.
+  path: Assets/Sprites/sprites_outlined/tile222.png
+  artifactKey: Guid(787a40e996c4d7d41b280877893dbeee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile222.png using Guid(787a40e996c4d7d41b280877893dbeee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b83c1c91a6b6d195cfd16f2e58903e6') in 0.100697 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/sprites_outlined/tile260.png
+  artifactKey: Guid(719d978fac6ab2241b6359146d445391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile260.png using Guid(719d978fac6ab2241b6359146d445391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efc67922850602ee96795dd5063f300') in 0.012718 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/sprites_outlined/tile224.png
+  artifactKey: Guid(0f597669df040c6498df842c2af668ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile224.png using Guid(0f597669df040c6498df842c2af668ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe0a37c4a70b95c5194a575030d6953') in 0.011752 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/sprites_outlined/tile264.png
+  artifactKey: Guid(f6cca668aa908ef4c9f9b786aee569ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile264.png using Guid(f6cca668aa908ef4c9f9b786aee569ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f30dadf09b6ffcd9ce64389070e44e') in 0.029476 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/sprites_outlined/tile248.png
+  artifactKey: Guid(02e1e51201d2eb04389cb2239f52a94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile248.png using Guid(02e1e51201d2eb04389cb2239f52a94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd29dcf10253a9eabd7942ad10cd44a6a') in 0.010561 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/sprites_outlined/tile270.png
+  artifactKey: Guid(c9a8d11ba1fa0f042aad4f6d43282875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile270.png using Guid(c9a8d11ba1fa0f042aad4f6d43282875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ceee20a5eb124ebfbf6f927e9f804d8') in 0.009650 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/sprites_outlined/tile227.png
+  artifactKey: Guid(afe2c744bf7d18443a6a22947595237c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile227.png using Guid(afe2c744bf7d18443a6a22947595237c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3c4782fa3ba797c9533f30ea15a5f0') in 0.027951 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/sprites_outlined/tile226.png
+  artifactKey: Guid(2085ee8944199b9478c7a577161bf887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile226.png using Guid(2085ee8944199b9478c7a577161bf887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0861983bdaa07afddb315b99ba2dcf8') in 0.024755 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/sprites_outlined/tile240.png
+  artifactKey: Guid(0402352ef1b6f4749bf947dac435790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile240.png using Guid(0402352ef1b6f4749bf947dac435790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6b237bcd3d9deb0990ffaf266dd78e') in 0.010205 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/sprites_outlined/tile295.png
+  artifactKey: Guid(7211e57bd94c09740869758055e73023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile295.png using Guid(7211e57bd94c09740869758055e73023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53701a2c8ddaca2af493ab3be0c17db4') in 0.010781 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/sprites_outlined/tile262.png
+  artifactKey: Guid(0db3f50159597df40b2d92c443408da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile262.png using Guid(0db3f50159597df40b2d92c443408da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e24488c44c4b9bbb558839af272ba3') in 0.011101 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/sprites_outlined/tile235.png
+  artifactKey: Guid(0368a83be8b7a0548aa9c451e1e65b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile235.png using Guid(0368a83be8b7a0548aa9c451e1e65b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f2aaca9b4d091fe2d3c3c652b58974') in 0.009859 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/sprites_outlined/tile259.png
+  artifactKey: Guid(cd1cd0dcc25bf70449e337f7e5ac728f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile259.png using Guid(cd1cd0dcc25bf70449e337f7e5ac728f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303b6965ef8379075e46c68b37407b57') in 0.013107 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/sprites_outlined/tile268.png
+  artifactKey: Guid(6a2722ad5d9602d4d801834232632a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile268.png using Guid(6a2722ad5d9602d4d801834232632a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86069f7da934ee95efa5ee0ae9340e92') in 0.012044 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/sprites_outlined/tile253.png
+  artifactKey: Guid(acf143ca4d3dc214aa6da9791cecc988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile253.png using Guid(acf143ca4d3dc214aa6da9791cecc988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '191d878efe6a36222d904fb835f5fb0c') in 0.011048 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/sprites_outlined/tile229.png
+  artifactKey: Guid(d5b1faffe4c55de46900d8f1b51c24f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile229.png using Guid(d5b1faffe4c55de46900d8f1b51c24f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80776a93584fd853a9f75d772f9278c5') in 0.009657 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/sprites_outlined/tile279.png
+  artifactKey: Guid(340cfb93a414fad4bb54097664202acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile279.png using Guid(340cfb93a414fad4bb54097664202acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac1da5e7813044a4f6f3ef12515fa70') in 0.008462 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile277.png
+  artifactKey: Guid(140dfa4f9a131b2498ed4689b6d2994b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile277.png using Guid(140dfa4f9a131b2498ed4689b6d2994b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77dc658707f481e2ce42dbd588b4b4a7') in 0.008971 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/sprites_outlined/tile298.png
+  artifactKey: Guid(d2ee323f648732b4d9033703769d7e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile298.png using Guid(d2ee323f648732b4d9033703769d7e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992afbab84493ccc0ca00b71efec6be0') in 0.008518 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/sprites_outlined/tile250.png
+  artifactKey: Guid(c466ccd7aec040d44adc442f8ff3ae11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile250.png using Guid(c466ccd7aec040d44adc442f8ff3ae11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a8955258e31e9f6c346a46e76876c83') in 0.008510 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/sprites_outlined/tile241.png
+  artifactKey: Guid(a004eeecd2bf24642816cc44a958c6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile241.png using Guid(a004eeecd2bf24642816cc44a958c6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b637a74296151704266983c0c49c7d') in 0.009458 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/sprites_outlined/tile265.png
+  artifactKey: Guid(97b814e869708c747b981a126ff8a663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile265.png using Guid(97b814e869708c747b981a126ff8a663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61267126a5ac205b947fcefe1507962d') in 0.012743 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile271.png
+  artifactKey: Guid(2cc764ee78aadf3499a3ca5c64a6d142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile271.png using Guid(2cc764ee78aadf3499a3ca5c64a6d142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49ad68b68537ced601e2ffa23fc7ffe7') in 0.010919 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile231.png
+  artifactKey: Guid(3e4b455933856174e84351a64470369e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile231.png using Guid(3e4b455933856174e84351a64470369e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42926a79a180716e7a7dd0a556054a48') in 0.011592 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/sprites_outlined/tile293.png
+  artifactKey: Guid(edfb1cd03c0c6e04aa270faf8b287930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile293.png using Guid(edfb1cd03c0c6e04aa270faf8b287930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0672bf726764ab26afd1a7b052b801') in 0.009636 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/sprites_outlined/tile238.png
+  artifactKey: Guid(2e7e476426cbdb444b6275aa4d058492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile238.png using Guid(2e7e476426cbdb444b6275aa4d058492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716e46f1c338053db7577c53269b4555') in 0.009947 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/sprites_outlined/tile269.png
+  artifactKey: Guid(4fc556c9270ee1a4692a2e5a02f434ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile269.png using Guid(4fc556c9270ee1a4692a2e5a02f434ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f03945115ad25683b69ee028ed777fa') in 0.009672 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.074010 seconds.
+  path: Assets/Sprites/sprites_outlined/tile222.png
+  artifactKey: Guid(787a40e996c4d7d41b280877893dbeee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile222.png using Guid(787a40e996c4d7d41b280877893dbeee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fdc37d0f1695162e0902f425e90a795') in 0.060933 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/sprites_outlined/tile273.png
+  artifactKey: Guid(fee4eb3d2ce305e47a0482a459912238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile273.png using Guid(fee4eb3d2ce305e47a0482a459912238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9950564875a48128730eb1ab188cd46a') in 0.008967 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/sprites_outlined/tile274.png
+  artifactKey: Guid(e0da386e2c700ac4ea2218c6293b093e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile274.png using Guid(e0da386e2c700ac4ea2218c6293b093e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '473ffd39590c87a0b4d5c53955e9064c') in 0.010197 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/sprites_outlined/tile278.png
+  artifactKey: Guid(b314dba75b16ee441bd8e7463ee6ea72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile278.png using Guid(b314dba75b16ee441bd8e7463ee6ea72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d88bbb88ecf5e5818bfa9fbe14a1e2') in 0.010617 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/sprites_outlined/tile275.png
+  artifactKey: Guid(4db756663d0fe6540a23df65c7bfe2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile275.png using Guid(4db756663d0fe6540a23df65c7bfe2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e7d917dbeff96b8306d77b960b808c') in 0.010375 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/sprites_outlined/tile234.png
+  artifactKey: Guid(e4ba19696b122084db680af1e2e2e6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile234.png using Guid(e4ba19696b122084db680af1e2e2e6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2213a5975c9eaeee2fe51f76f4b9302b') in 0.010412 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile270.png
+  artifactKey: Guid(c9a8d11ba1fa0f042aad4f6d43282875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile270.png using Guid(c9a8d11ba1fa0f042aad4f6d43282875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6b16197bc64ef8e0fb3e60c2b40ca6') in 0.012551 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/sprites_outlined/tile227.png
+  artifactKey: Guid(afe2c744bf7d18443a6a22947595237c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile227.png using Guid(afe2c744bf7d18443a6a22947595237c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b62f9c9e8de9c7bf0d1881bcb473c39') in 0.010402 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/sprites_outlined/tile240.png
+  artifactKey: Guid(0402352ef1b6f4749bf947dac435790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile240.png using Guid(0402352ef1b6f4749bf947dac435790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f987510ddbe211b1d9efe9351fad5a49') in 0.011355 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/sprites_outlined/tile296.png
+  artifactKey: Guid(f2ae7381cd318324286d5fb12e72c258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile296.png using Guid(f2ae7381cd318324286d5fb12e72c258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2ee5fd1b014d0b5dc57249a3cd38f4') in 0.010675 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/sprites_outlined/tile263.png
+  artifactKey: Guid(052b4a5e4da4cc041bf4927c70e886ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile263.png using Guid(052b4a5e4da4cc041bf4927c70e886ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c95660df2578bf13df50597e08958f') in 0.011836 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/sprites_outlined/tile276.png
+  artifactKey: Guid(40836bca005715941a4b90e6cd1f3b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile276.png using Guid(40836bca005715941a4b90e6cd1f3b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db802a2b0b89fc35b2d363341af7d677') in 0.012298 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/sprites_outlined/tile253.png
+  artifactKey: Guid(acf143ca4d3dc214aa6da9791cecc988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile253.png using Guid(acf143ca4d3dc214aa6da9791cecc988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874830f7a93fdfe9360bf0e14bc29209') in 0.012132 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/sprites_outlined/tile261.png
+  artifactKey: Guid(36ab5dfb80811df49b83e09c888fe3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile261.png using Guid(36ab5dfb80811df49b83e09c888fe3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5afa5401cfa3e319cb7e6e209289d08d') in 0.010935 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/sprites_outlined/tile277.png
+  artifactKey: Guid(140dfa4f9a131b2498ed4689b6d2994b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile277.png using Guid(140dfa4f9a131b2498ed4689b6d2994b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf5fd5d7701605c6620ea54fe7f496c') in 0.010106 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/sprites_outlined/tile298.png
+  artifactKey: Guid(d2ee323f648732b4d9033703769d7e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile298.png using Guid(d2ee323f648732b4d9033703769d7e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ccb431a228c7b67cca1e933cb37691') in 0.010428 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile250.png
+  artifactKey: Guid(c466ccd7aec040d44adc442f8ff3ae11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile250.png using Guid(c466ccd7aec040d44adc442f8ff3ae11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da134a20cd6c474c4149de2cb188d8e') in 0.010737 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/sprites_outlined/tile291.png
+  artifactKey: Guid(cc2b5057105a94e478a1c08d9e40df30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile291.png using Guid(cc2b5057105a94e478a1c08d9e40df30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ed11f3b66217ba50b36e45069bb0fe') in 0.011005 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/sprites_outlined/tile237.png
+  artifactKey: Guid(5e4614e99cce9d340ab88415418452ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile237.png using Guid(5e4614e99cce9d340ab88415418452ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f99d8526388bae89401b56a17aff8a') in 0.012930 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/sprites_outlined/tile238.png
+  artifactKey: Guid(2e7e476426cbdb444b6275aa4d058492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile238.png using Guid(2e7e476426cbdb444b6275aa4d058492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc3ac13c19c0c93175ed25a050fd116') in 0.010886 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/sprites_outlined/tile012.png
+  artifactKey: Guid(c8872de8559eecd4895435fd7fe7b7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile012.png using Guid(c8872de8559eecd4895435fd7fe7b7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f1e06a1eb8ae4dc84766ccb1f87647') in 0.010040 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.442290 seconds.
+  path: Assets/Sprites/sprites_outlined/tile197.png
+  artifactKey: Guid(0195be39a9cf4f14eb6d431257395ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile197.png using Guid(0195be39a9cf4f14eb6d431257395ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '814685ffac20031519824f0e2d3fab82') in 0.035026 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/sprites_outlined/tile208.png
+  artifactKey: Guid(452f074b3c7b60d45b656204bacc1b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile208.png using Guid(452f074b3c7b60d45b656204bacc1b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126cdf97033ec469c617ad4879e7b7ae') in 0.013641 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/sprites_outlined/tile220.png
+  artifactKey: Guid(20b23af5e46979f4ea354750a5b53ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile220.png using Guid(20b23af5e46979f4ea354750a5b53ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9eb183da3418baf529211fa86772e5') in 0.012142 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/sprites_outlined/tile211.png
+  artifactKey: Guid(6f77fe1c7943bda4ba743d3d22de234b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile211.png using Guid(6f77fe1c7943bda4ba743d3d22de234b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ec92115b51ea52820c07343e4798a6') in 0.012059 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/sprites_outlined/tile217.png
+  artifactKey: Guid(8497ec95f33ec5c4cb8c7253ae8df262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile217.png using Guid(8497ec95f33ec5c4cb8c7253ae8df262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ccbea1c61e1101fd5f872f97799359') in 0.011004 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/sprites_outlined/tile210.png
+  artifactKey: Guid(2695c7822da440541b55ef59cefb458c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile210.png using Guid(2695c7822da440541b55ef59cefb458c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be7a1470ecdde75e864e835a87e11667') in 0.009784 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.288821 seconds.
+  path: Assets/Sprites/sprites_outlined/tile171.png
+  artifactKey: Guid(87f1e53dc9a23e54387db30adbc945ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile171.png using Guid(87f1e53dc9a23e54387db30adbc945ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7296586f6bc8ed773d191a6d3935f818') in 0.011731 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/sprites_outlined/tile174.png
+  artifactKey: Guid(a359d8c1745613447be22c3d2eb92ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile174.png using Guid(a359d8c1745613447be22c3d2eb92ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9bad48b1345d573ba53191da5567ea1') in 0.010551 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/sprites_outlined/tile182.png
+  artifactKey: Guid(da6ae8ca6a0daa948ac14b784d0f69a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile182.png using Guid(da6ae8ca6a0daa948ac14b784d0f69a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee9f7e1465a48e1217f0888a8d9a343') in 0.010911 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile196.png
+  artifactKey: Guid(49e613561c676c84ab0a4db09c644ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile196.png using Guid(49e613561c676c84ab0a4db09c644ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef1f543aca9fd2ec72ce0ddd07f2ca6') in 0.011702 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/sprites_outlined/tile183.png
+  artifactKey: Guid(acfce0befddffbe48901649eed1c079e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile183.png using Guid(acfce0befddffbe48901649eed1c079e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9adeb9129c89efdac61fac73c66421') in 0.010661 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile187.png
+  artifactKey: Guid(abb62aafec7e28c48b8c623b047bcfd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile187.png using Guid(abb62aafec7e28c48b8c623b047bcfd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc62679fd724edc16f47acb35d3f6a3') in 0.010199 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 47.963280 seconds.
+  path: Assets/Sprites/sprites_outlined/tile152.png
+  artifactKey: Guid(13613fcfb32f22649ba3ac9498f6f3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile152.png using Guid(13613fcfb32f22649ba3ac9498f6f3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ed024b91ab50ff12b95d5a22ef31b1') in 0.021977 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/sprites_outlined/tile163.png
+  artifactKey: Guid(d0dbdbca1e09078449ffe4969a280b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile163.png using Guid(d0dbdbca1e09078449ffe4969a280b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '260f69ba03cc1f07ec12f702984c6890') in 0.011719 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/sprites_outlined/tile157.png
+  artifactKey: Guid(2e238903761c3b9419c0d751b39e93e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile157.png using Guid(2e238903761c3b9419c0d751b39e93e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a0648b758f0e53ecff914f3a13a092') in 0.042970 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/sprites_outlined/tile158.png
+  artifactKey: Guid(1fa12e872fa7523479729e00fc03d3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile158.png using Guid(1fa12e872fa7523479729e00fc03d3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6482dc856eb92c5342feffe0aeaa9a2e') in 0.012833 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/sprites_outlined/tile136.png
+  artifactKey: Guid(53dc89a279be79847b8eb3b8dad5840a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile136.png using Guid(53dc89a279be79847b8eb3b8dad5840a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c56bb2a816e37814654d593fdda1796c') in 0.012294 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/sprites_outlined/tile144.png
+  artifactKey: Guid(45c44a4f5cfed064baa75124f736186a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile144.png using Guid(45c44a4f5cfed064baa75124f736186a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141642b4012fcebb33906c92b6e35961') in 0.014485 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile145.png
+  artifactKey: Guid(6e008574621dfe04dbf0ce6589d0b2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile145.png using Guid(6e008574621dfe04dbf0ce6589d0b2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327cfb5f9d82802b96d94d19fab721f9') in 0.014383 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/sprites_outlined/tile151.png
+  artifactKey: Guid(058268aad1ebf074b8b631c34e814ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile151.png using Guid(058268aad1ebf074b8b631c34e814ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d7f9ea45422ec83123210958c3fa501') in 0.015560 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/sprites_outlined/tile135.png
+  artifactKey: Guid(6e6d2e42ccfed2e4b82c51bae67db5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile135.png using Guid(6e6d2e42ccfed2e4b82c51bae67db5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01f7fda546d10373a0cf0734ea93b2c') in 0.014470 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/sprites_outlined/tile164.png
+  artifactKey: Guid(7e9a87ca500b43d46b3e5c9f3962ca6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile164.png using Guid(7e9a87ca500b43d46b3e5c9f3962ca6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4ae7d6e401ab740a20f8a9d7f9d4a19') in 0.012818 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/sprites_outlined/tile133.png
+  artifactKey: Guid(1cb33cbf21d36ef4d98cfae38e4828cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile133.png using Guid(1cb33cbf21d36ef4d98cfae38e4828cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e72406d079136ef3ee8c5bdce51dcf3') in 0.011228 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.002210 seconds.
+  path: Assets/Sprites/sprites_outlined/tile116.png
+  artifactKey: Guid(8112a5ef7c17e7644b9f03d189d3de14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile116.png using Guid(8112a5ef7c17e7644b9f03d189d3de14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bdca13db181e2bc75d32aafe034b4e6') in 0.010489 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/sprites_outlined/tile122.png
+  artifactKey: Guid(6983cc004ee1fcd4a8ca01531ea3fd9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile122.png using Guid(6983cc004ee1fcd4a8ca01531ea3fd9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '370c3ed390768af13e264eb6de6b0be0') in 0.012517 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile123.png
+  artifactKey: Guid(cfc6265d892515d41b7cbc97e73b1ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile123.png using Guid(cfc6265d892515d41b7cbc97e73b1ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81645d4817a0342ad78ffea651618cfc') in 0.013066 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/sprites_outlined/tile121.png
+  artifactKey: Guid(29462d054b9560c4cb2c05c9d11ed2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile121.png using Guid(29462d054b9560c4cb2c05c9d11ed2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7c22c615b315b9832d80fd8e01ac16') in 0.014174 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile124.png
+  artifactKey: Guid(22cf4d634375bce4ca1d7e65e7d88cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile124.png using Guid(22cf4d634375bce4ca1d7e65e7d88cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05b00484d1f62b56edbecb4cd6f5a50e') in 0.012224 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.863537 seconds.
+  path: Assets/Sprites/sprites_outlined/tile100.png
+  artifactKey: Guid(11c1eacb4f097af4ab798b9fae76b65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile100.png using Guid(11c1eacb4f097af4ab798b9fae76b65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd62208d868b2915b367cdc750f9b9aa8') in 0.012773 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/sprites_outlined/tile115.png
+  artifactKey: Guid(77246659d95c9684fa690ba5e0c2ca51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile115.png using Guid(77246659d95c9684fa690ba5e0c2ca51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24a6b309d4d3b3c9d0ee9c39c119e34') in 0.011902 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/sprites_outlined/tile105.png
+  artifactKey: Guid(4fff977467b79724092749983970a9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile105.png using Guid(4fff977467b79724092749983970a9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c1c06ed1d0a5a982276c86fc5b0b2f') in 0.010906 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/sprites_outlined/tile106.png
+  artifactKey: Guid(85db3cc0fa896a64dbf44599a9e0df55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile106.png using Guid(85db3cc0fa896a64dbf44599a9e0df55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd0f53c3bbf10e43d6a11de0085aa07') in 0.011934 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/sprites_outlined/tile103.png
+  artifactKey: Guid(29b3aca8ca0744a47b9ae38aa11cd369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile103.png using Guid(29b3aca8ca0744a47b9ae38aa11cd369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96b0b2a15527c81c29a5ddc5c5eab7d') in 0.010175 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/sprites_outlined/tile104.png
+  artifactKey: Guid(5f5e2f1100c709440a2e78ed08baa902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile104.png using Guid(5f5e2f1100c709440a2e78ed08baa902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de7fd0a49a736b9b929447ad0f4a42f4') in 0.012053 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.663655 seconds.
+  path: Assets/Sprites/sprites_outlined/tile084.png
+  artifactKey: Guid(27bbe3ff27f9d8b41bc93fc910c42c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile084.png using Guid(27bbe3ff27f9d8b41bc93fc910c42c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ddb3be5077eae08dc4fdff557cbda9') in 0.013006 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/sprites_outlined/tile095.png
+  artifactKey: Guid(4a699abffa7ec164ca4a7752b3c12707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile095.png using Guid(4a699abffa7ec164ca4a7752b3c12707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f0634d7b31760610255899ed3e5092') in 0.012491 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/sprites_outlined/tile099.png
+  artifactKey: Guid(88cc4bc05117ed24a90ae10db8b0fb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile099.png using Guid(88cc4bc05117ed24a90ae10db8b0fb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6099059edcef43add350c573128233') in 0.011167 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/sprites_outlined/tile087.png
+  artifactKey: Guid(857ac9da66d25134b9823e09b14d1dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile087.png using Guid(857ac9da66d25134b9823e09b14d1dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69dcf7ba729ccd6d477842c3fcd5e771') in 0.012326 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/sprites_outlined/tile088.png
+  artifactKey: Guid(9b65c23d167906347ad57041fb053d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile088.png using Guid(9b65c23d167906347ad57041fb053d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0307c6b6085e26b057a46609a648b61') in 0.012616 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.671741 seconds.
+  path: Assets/Sprites/sprites_outlined/tile068.png
+  artifactKey: Guid(3c301df6d9ec2094fb1c44e50a33bf41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile068.png using Guid(3c301df6d9ec2094fb1c44e50a33bf41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21904584d0e445506181b682317f437e') in 0.011745 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/sprites_outlined/tile076.png
+  artifactKey: Guid(c7a4bc81ef2ad8f4b96a61aad8f84859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile076.png using Guid(c7a4bc81ef2ad8f4b96a61aad8f84859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc92f5d00d2b1b02612d064bc8864ec4') in 0.012474 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/sprites_outlined/tile078.png
+  artifactKey: Guid(46bc702c3a4c5504bb69cfb462d1ab1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile078.png using Guid(46bc702c3a4c5504bb69cfb462d1ab1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b52654165189aceb0a57d88d346f8c') in 0.011718 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/sprites_outlined/tile082.png
+  artifactKey: Guid(5e7d9dfecef56a44caf4f46202abb37a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile082.png using Guid(5e7d9dfecef56a44caf4f46202abb37a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9b89aebcaf1a25382513a9f21b7164') in 0.012338 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile081.png
+  artifactKey: Guid(ac1d03572fae7f241bde57393a517570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile081.png using Guid(ac1d03572fae7f241bde57393a517570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad2913715fda4a074e77b9eb3590f68') in 0.013391 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000489 seconds.
+  path: Assets/Sprites/sprites_outlined/tile052.png
+  artifactKey: Guid(f4ccc128f000dd44db76768e88ab9914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile052.png using Guid(f4ccc128f000dd44db76768e88ab9914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '872efd008d201c0434b8c5eddb6282ce') in 0.012956 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/sprites_outlined/tile054.png
+  artifactKey: Guid(9f593756a572a3b4e812ad1afb516735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile054.png using Guid(9f593756a572a3b4e812ad1afb516735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd15dada8111ccc6934335457202db04') in 0.011221 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/sprites_outlined/tile062.png
+  artifactKey: Guid(9c5edcb8d4cb5cc42acce3a17fc25798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile062.png using Guid(9c5edcb8d4cb5cc42acce3a17fc25798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1357c805e22e84151613c2bf00afdbed') in 0.011181 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/sprites_outlined/tile066.png
+  artifactKey: Guid(be04e0649f2b4c34a9acf88a11e8412f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile066.png using Guid(be04e0649f2b4c34a9acf88a11e8412f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327525287ebd847737e04107d0bf7ee9') in 0.012640 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/sprites_outlined/tile061.png
+  artifactKey: Guid(e6f361a3055f40e42b71d313a89287ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile061.png using Guid(e6f361a3055f40e42b71d313a89287ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5948514e89e4f83c1a272d841fc57b6') in 0.012920 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/sprites_outlined/tile065.png
+  artifactKey: Guid(83de0aa9772d99a4ca2c145492569bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile065.png using Guid(83de0aa9772d99a4ca2c145492569bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e85eb8d5af85f2a0e11e14996468ff7') in 0.009449 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.395214 seconds.
+  path: Assets/Sprites/sprites_outlined/tile032.png
+  artifactKey: Guid(4b95eff9c52b87a4c8547ae1cb1c912f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile032.png using Guid(4b95eff9c52b87a4c8547ae1cb1c912f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4028f7cbd4265db15938759c387565c0') in 0.013441 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/sprites_outlined/tile041.png
+  artifactKey: Guid(c324060e0a9acb041bb42b8528890c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile041.png using Guid(c324060e0a9acb041bb42b8528890c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a3a27e8a7a64c8c57632931a8b9fd6') in 0.013095 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/sprites_outlined/tile045.png
+  artifactKey: Guid(a0d465565cb50e3428dcba5d09cfce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile045.png using Guid(a0d465565cb50e3428dcba5d09cfce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bace4d20679ca089840098faf82a80b') in 0.010974 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/sprites_outlined/tile039.png
+  artifactKey: Guid(fea0f3d8b17d2d44e8687567955e13a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile039.png using Guid(fea0f3d8b17d2d44e8687567955e13a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3805ecf74c72ae484102cfa8bedb8b9b') in 0.014050 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/sprites_outlined/tile048.png
+  artifactKey: Guid(3e68694bbfe851b42a495046238d9158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile048.png using Guid(3e68694bbfe851b42a495046238d9158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f849fd791a8c51e9a1bed8a7dcc4cc90') in 0.012766 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.035477 seconds.
+  path: Assets/Sprites/sprites_outlined/tile016.png
+  artifactKey: Guid(509a1f46a3b26494390248a361c66632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile016.png using Guid(509a1f46a3b26494390248a361c66632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be5d129940eb3c02f89956ecadee06a8') in 0.012804 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/sprites_outlined/tile031.png
+  artifactKey: Guid(78f6aad6b55cf0b4c8701969fabf335f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile031.png using Guid(78f6aad6b55cf0b4c8701969fabf335f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc41c793884e43be800762c39019e9a3') in 0.010521 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/sprites_outlined/tile028.png
+  artifactKey: Guid(7b2e848eb06c5054dac3fc99aa6e391a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile028.png using Guid(7b2e848eb06c5054dac3fc99aa6e391a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85acdea18fb71afa4085ca2b73c273a9') in 0.012717 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/sprites_outlined/tile030.png
+  artifactKey: Guid(c5a21d76daa81784cb29b6ed39684c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile030.png using Guid(c5a21d76daa81784cb29b6ed39684c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8c0845c1d31d3744368497588d48a5') in 0.009548 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/sprites_outlined/tile024.png
+  artifactKey: Guid(3bafde3f358169e4e980727661baea08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile024.png using Guid(3bafde3f358169e4e980727661baea08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886358f932ba2c22c0a617990a15e54e') in 0.012325 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002287 seconds.
+  path: Assets/Sprites/sprites_outlined/tile000.png
+  artifactKey: Guid(dc65651abdede4b438ebcf23210e6f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile000.png using Guid(dc65651abdede4b438ebcf23210e6f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f9f7c834dac603d188058604d7f790b') in 0.013261 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/sprites_outlined/tile007.png
+  artifactKey: Guid(5a06081f13108ac4894527c842caf8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile007.png using Guid(5a06081f13108ac4894527c842caf8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89defc6ffd7934bf10be9ef80d4758e6') in 0.013205 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/sprites_outlined/tile006.png
+  artifactKey: Guid(a713ec4eddd1ac34890d7a77eb53f059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile006.png using Guid(a713ec4eddd1ac34890d7a77eb53f059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6a3971fd206ca7751df4717bb2be108') in 0.011878 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/sprites_outlined/tile008.png
+  artifactKey: Guid(68282572e022548439763ce498e1e162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile008.png using Guid(68282572e022548439763ce498e1e162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd7f7f6d9d23a924136206a45977f2d') in 0.012202 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/sprites_outlined/tile010.png
+  artifactKey: Guid(b53747eb8f0b5e0449e947f3bd1edfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sprites/sprites_outlined/tile010.png using Guid(b53747eb8f0b5e0449e947f3bd1edfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba26d87f402a63c9086ae01b01ad2691') in 0.011231 seconds 
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
