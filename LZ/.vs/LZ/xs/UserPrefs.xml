@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{EB412E82-12B7-1852-E7A5-5F3A31FE6E05}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Model/Player.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Data/Enum.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/Database.cs" Line="5" Column="38" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="7" Column="5" />
+      <File FileName="Assets/Scripts/Model/Player.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LZ" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Data" expanded="True" />
+                <Node name="Model" expanded="True">
+                  <Node name="Player.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a2aa2e8a-e6d3-4ec1-9286-c2a7f874093b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

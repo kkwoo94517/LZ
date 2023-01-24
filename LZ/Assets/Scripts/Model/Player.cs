@@ -12,6 +12,9 @@ public class Player
     // 현재 스테이지
     public int Stage { get; set; }
 
+    // 오늘 날의 상태
+    public DateType DateType { get; set; }
+
     // 현재 체력
     public int CurrentHP { get; set; }
 

@@ -1,3 +1,10 @@
+public enum DateType
+{
+    Dawn,
+    Day,
+    Night,
+}
+
 
 
 public enum TagType
@@ -10,7 +17,7 @@ public enum TagType
     Ply = 5,
 }
 
-// 게임 난이도 설정 (쌓이도록)
+// ???? ?????? ???? (????????)
 public enum DifficultyType
 {
     Normal = 0,
@@ -26,7 +33,7 @@ public enum StatusType
     Skip = 3,
 }
 
-// 추후에 나올 애니메이션 모음
+// ?????? ???? ?????????? ????
 public enum AnimationType
 {
     None = 0,
@@ -34,7 +41,7 @@ public enum AnimationType
     Destory = 2,
 }
 
-// 아이템 등급
+// ?????? ????
 public enum GradeType
 {
     None = 0,
@@ -69,9 +76,9 @@ public enum BodyType
 public enum BodyDamageType
 {
     None = 0,
-    Slight = 1, // 경미한
-    SeriousInjury = 2, // 중상
-    Critical = 3, // 위태로운
+    Slight = 1, // ??????
+    SeriousInjury = 2, // ????
+    Critical = 3, // ????????
 }
 
 
