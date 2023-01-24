@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Weather_0
+      name: Dawn
       rect:
         serializedVersion: 2
         x: 177
@@ -140,7 +140,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weather_1
+      name: DawnToDay
       rect:
         serializedVersion: 2
         x: 225
@@ -161,10 +161,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weather_2
+      name: Day
       rect:
         serializedVersion: 2
-        x: 273
+        x: 274
         y: 223
         width: 46
         height: 46
@@ -182,7 +182,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weather_3
+      name: DayToNight
       rect:
         serializedVersion: 2
         x: 177
@@ -203,7 +203,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weather_4
+      name: Night
       rect:
         serializedVersion: 2
         x: 225
@@ -224,7 +224,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weather_5
+      name: NightToDawn
       rect:
         serializedVersion: 2
         x: 273
@@ -274,7 +274,7 @@ TextureImporter:
         width: 46
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,7 +295,7 @@ TextureImporter:
         width: 46
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,7 +316,7 @@ TextureImporter:
         width: 46
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,7 +337,7 @@ TextureImporter:
         width: 46
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -358,7 +358,7 @@ TextureImporter:
         width: 46
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -379,7 +379,7 @@ TextureImporter:
         width: 46
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,7 +400,7 @@ TextureImporter:
         width: 46
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -421,7 +421,7 @@ TextureImporter:
         width: 46
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,19 +445,19 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Weather_11: -125984870
-      Weather_3: -1852298260
-      Weather_5: 1770516472
+      DawnToDay: 653891652
       Weather_8: 1353851568
+      Night: -2094213177
       Weather_9: -1864609861
       Weather_13: 2049326794
-      Weather_2: 1253610552
+      DayToNight: -1852298260
+      Dawn: 1117064753
       Weather_7: -1802267621
+      NightToDawn: 1770516472
       Weather_10: -817363325
       Weather_6: 2050550135
-      Weather_0: 1117064753
-      Weather_4: -2094213177
+      Day: 1253610552
       Weather_14: 908473507
-      Weather_1: 653891652
       Weather_12: -1542086709
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

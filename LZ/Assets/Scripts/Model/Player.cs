@@ -9,11 +9,11 @@ public class Player
     // 현재 챕터
     public int Chapter { get; set; }
 
-    // 현재 스테이지
-    public int Stage { get; set; }
+    // 현재 날짜
+    public int Date { get; private set; } = 0;
 
     // 오늘 날의 상태
-    public DateType DateType { get; set; }
+    public DayType DayType { get; private set; } = DayType.Night;
 
     // 현재 체력
     public int CurrentHP { get; set; }
@@ -38,8 +38,16 @@ public class Player
         Score = 0;
     }
 
-    public void SetGachaProbability()
+    public void SetNextTime()
     {
+        DayType++;
 
+        // 밤이 지났다면
+        // 일자 증가 및 다시 새벽으로
+        if (DayType > DayType.Night)
+        {
+            Date++;
+            DayType = DayType.Dawn;
+        }
     }
 }

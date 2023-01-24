@@ -1,8 +1,8 @@
-public enum DateType
+public enum DayType
 {
-    Dawn,
-    Day,
-    Night,
+    Dawn = 0,
+    Day = 1,
+    Night = 2,
 }
 
 
