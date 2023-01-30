@@ -5,7 +5,10 @@ public enum DayType
     Night = 2,
 }
 
+public enum RegionType
+{
 
+}
 
 public enum TagType
 {

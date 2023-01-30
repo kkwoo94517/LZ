@@ -1,74 +1,122 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UISlotItem : MonoBehaviour
+public class UISlotItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public delegate void SlotSearchFunc();
+    public delegate void SlotFoundFunc();
 
-    [SerializeField] private Image Slot;
+    [SerializeField] private Image SlotImage;
     [SerializeField] private Color SlotActiveColor;
 
     [SerializeField] private Image SlotItemIcon;
-    private float SearchTime = 0.6f;
 
-    private void Awake()
-    {
-        Slot = GetComponent<Image>();
-    }
+    private SlotItem SlotItem;
+    public int X => SlotItem.X;
+    public int Y => SlotItem.Y;
 
-    public void SearchAndFoundItem(float waitTime, bool isActive, Sprite sprite)
+    // TODO : 찾는 딜레이 시간
+    private float SearchTime = 0.0f;
+    private float SearchDelayTime = 1.0f;
+    private bool isFound = false;
+    private bool isSearch = false;
+    private bool isFoundHalf = false;
+
+    public void Update()
     {
-        StartCoroutine(Co_Search(waitTime, () => 
+        if (isFound)
         {
-            ActiveSlotItem(isActive, sprite);
+            return;
+        }
 
-            if (isActive)
+        if (isSearch)
+        {
+            SearchTime += Time.deltaTime / SearchDelayTime;
+
+            SlotImage.color = Color.Lerp(Color.white, Color.clear, SearchTime);
+
+            if (!isFoundHalf && SlotImage.color.a <= 0.75f)
             {
+                isFoundHalf = true;
+                SlotItemIcon.color = Color.black;
+            }
+
+            if (SlotImage.color.a <= 0.1f)
+            {
+                ActiveSlotItem();
                 UIManager.Instance.UIHistory.AddHistoryItem();
             }
-        }));
+        }
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (isFound) { return; }
+
+        isSearch = true;
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        isSearch = false;
+    }
+
+    public void LoadSlotAni(float delay)
+    {
+        StartCoroutine(Co_Load(delay));
+    }
+
+    public void Init(int x, int y)
+    {
+        SlotItem = new SlotItem
+        {
+            X = x,
+            Y = y,
+        };
     }
 
 
-    private void ActiveSlotItem(bool isActive, Sprite sprite)
+    public void ActiveSlot(bool isActive)
     {
-        Slot.color = isActive ? SlotActiveColor : Color.black;
+        this.gameObject.SetActive(isActive);
+    }
 
-
-        SlotItemIcon.gameObject.SetActive(isActive);
-        SlotItemIcon.sprite = isActive ? sprite : null;
+    private void ActiveSlotItem()
+    {
+        isFound = true;
+        SlotImage.color = SlotActiveColor;
+        SlotItemIcon.color = Color.white;
     }
 
     public void ClearSlotItem()
     {
-        Slot.color = SlotActiveColor;
-        SlotItemIcon.gameObject.SetActive(false);
+        isFound = false;
+        isFoundHalf = false;
+        SearchTime = 0.0f;
+        SlotImage.color = SlotActiveColor;
+        SlotItemIcon.color = Color.clear;
+        this.gameObject.SetActive(false);
     }
 
-    private IEnumerator Co_Search(float waitTime, SlotSearchFunc func)
+    private IEnumerator Co_Load(float delay)
     {
-        SlotItemIcon.sprite = null;
-        SlotItemIcon.gameObject.SetActive(false);
-        SlotItemIcon.transform.localScale = new Vector3(.5f, .5f, 1.0f);
-        yield return new WaitForSeconds(waitTime);
+        var random = new System.Random((int)DateTime.Now.Ticks);
+        yield return new WaitForSeconds(delay);
 
-        var timer = 0.0f;
-        SlotItemIcon.gameObject.SetActive(true);
+        var whiteColor = new Color32((byte)random.Next(245, 255), (byte)random.Next(245, 255), (byte)random.Next(245, 255), 255);
+        float progress = 0; float duration = 10f; float increment = 0.02f / duration;
 
-        while (SearchTime > timer)
+        while (progress < 1)
         {
-            timer += Time.deltaTime;
-
-            SlotItemIcon.transform.Rotate(0f, 0f, 1f, Space.Self);
-
+            SlotImage.color = Color.Lerp(SlotActiveColor, whiteColor, progress);
+            progress += increment;
             yield return new WaitForEndOfFrame();
         }
 
-        func?.Invoke();
-        SlotItemIcon.transform.rotation = new Quaternion(0, 0, 0, 0);
-        SlotItemIcon.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        SlotImage.color = whiteColor;
         yield break;
     }
 }
