@@ -24,7 +24,7 @@ public class ItemEntity
     // 태그 원본
     public string TagJson { get; set; }
     [JsonIgnore] // 연관 태그
-    public HashSet<TagType> Tags { get; set; }
+    public HashSet<ItemCategoryType> Tags { get; set; }
 
     public ItemEntity(ItemEntity data)
     {
@@ -40,12 +40,12 @@ public class ItemEntity
         Tags = GetTagTypes(data.TagJson);
     }
 
-    public HashSet<TagType> GetTagTypes(string tagjson)
+    public HashSet<ItemCategoryType> GetTagTypes(string tagjson)
     {
-        var result = new HashSet<TagType>();
+        var result = new HashSet<ItemCategoryType>();
         var tags = tagjson.Split(';').ToList();
 
-        tags.ForEach(e => result.Add((TagType)Enum.Parse(typeof(TagType), e)));
+        tags.ForEach(e => result.Add((ItemCategoryType)Enum.Parse(typeof(ItemCategoryType), e)));
 
         return result;
     }

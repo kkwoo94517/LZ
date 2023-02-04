@@ -10,14 +10,10 @@ public enum RegionType
 
 }
 
-public enum TagType
+public enum ItemCategoryType
 {
     None = 0,
-    Fixed = 1,
-    Poop = 2,
-    Alone = 3,
-    Ephemera = 4,
-    Ply = 5,
+
 }
 
 // ???? ?????? ???? (????????)
@@ -28,13 +24,6 @@ public enum DifficultyType
     Boss = 2,
 }
 
-public enum StatusType
-{
-    None = 0,
-    Activate = 1,
-    Destory = 2,
-    Skip = 3,
-}
 
 // ?????? ???? ?????????? ????
 public enum AnimationType

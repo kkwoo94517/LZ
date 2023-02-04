@@ -31,17 +31,4 @@
             }
         }
     }
-
-    // 셔플 이전에 정리
-    public void Clear()
-    {
-        for (int x = 0; x < Width; x++)
-        {
-            for (int y = 0; y < Height; y++)
-            {
-                BeforeItems[y][x] = CurrentItems[y][x].Clone();
-                CurrentItems[y][x] = new Item();
-            }
-        }
-    }
 }

@@ -4,35 +4,39 @@ using System.Linq;
 public class Inventory
 {
     // 현재 인벤토리 내 아이템 갯수
-    public int Count => Items?.Values.Count ?? 0;
+    public int TotalCount => Items?.Values.Sum(e => e.Item2.StackCount) ?? 0;
 
-    // 각 아이템마다의 카운트
-    public Dictionary<int, int> EachCount => Items?.ToDictionary(k => k.Key, v => v.Value.Count) ?? new Dictionary<int, int>();
+    // 현재 인벤토리 최대 무게
+    public float MaxWeight = 10.0f;
+
+    // 현재 인벤토리 무게
+    public float CurrentWeight => Items?.Values.Sum(e => e.Item2.Weight) ?? 0.0f;
 
     // 획득한 아이템
-    // Key : UnqieuId
-    public Dictionary<int, List<Item>> Items { get; set; } = new Dictionary<int, List<Item>>();
+    // Key : UnqieuId, value : (index, item)
+    public Dictionary<int, (int, Item)> Items { get; set; } = new Dictionary<int, (int, Item)>();
 
     // 아이템 획득
-    public void AddItem(Item item)
+    public void Add(int uniqueId)
     {
-        // 이미 존재한다면 해당 리스트에 추가
-        if (Items.ContainsKey(item.UniqueId))
+        // 이미 존재한다면 아이템 StackCount++
+        if (Items.ContainsKey(uniqueId))
         {
-            Items[item.UniqueId].Add(item);
+            Items[uniqueId].Item2.StackCount++;
         }
         else
         {
-            Items.Add(item.UniqueId, new List<Item>() { item });
+            // TODO : CreateFactory 추가
+            var item = new Item();
+
+            Items.Add(uniqueId, (Items.Count + 1, item));
         }
     }
 
-    // 아이템 제거
-    public void RemoveItem(Item item)
+    // 인벤토리 비우기
+    public void Clear()
     {
-        if (Items.ContainsKey(item.UniqueId))
-        {
-            Items[item.UniqueId].Remove(item);
-        }
+        Items.Clear();
+        Items = new Dictionary<int, (int, Item)>();
     }
 }

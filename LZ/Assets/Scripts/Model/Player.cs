@@ -27,16 +27,7 @@ public class Player
     // 배고픔
     public int Hungry { get; set; }
 
-    // 날씨
-    // 불, 온도, 배고픔, 지역
-    // 나무, 
-
-
-    // 현재 몸 상태
-    public Dictionary<BodyType, BodyDamageType> BodyStatus = new Dictionary<BodyType, BodyDamageType>();
-
-    // 뽑기 아이템 확률
-    public Dictionary<GradeType, int> GachaProbability = new Dictionary<GradeType, int>();
+    public Inventory Inventory { get; set; }
 
     public Player()
     {

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +7,8 @@ using UnityEngine;
 public class UISlot : MonoBehaviour
 {
     [SerializeField] private Transform parentTransform;
+    [SerializeField] private Sprite DefaultBG;
+    [SerializeField] private List<Sprite> RandomBG;
     private Dictionary<int, List<UISlotItem>> UISlots = new Dictionary<int, List<UISlotItem>>();
 
     private List<UISlotItem> UIActiveSlotItems;
@@ -28,6 +31,7 @@ public class UISlot : MonoBehaviour
     private IEnumerator Co_LoadSlots(int row)
     {
         ActiveSlot(row);
+        RandomSpriteSlot();
         yield return new WaitForEndOfFrame();
         LoadSlotItemsAni();
     }
@@ -103,7 +107,17 @@ public class UISlot : MonoBehaviour
         }
     }
 
+    public void RandomSpriteSlot()
+    {
+        foreach (var uISlotItem in UIActiveSlotItems)
+        {
+            var random = new System.Random((int)(HelperService.RandomSeed() * 1000.0f));
 
+            var randomSprite = random.Next(0, 3) == 1 ? RandomBG[random.Next(RandomBG.Count)] : DefaultBG;
+
+            uISlotItem.DrawSlot(randomSprite);
+        }
+    }
 
 
 
