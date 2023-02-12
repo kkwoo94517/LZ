@@ -17,7 +17,9 @@ public class GameManager : MonoSingleton<GameManager>
     {
         IntroController.Load();
 
-        // TODO : 나중에 데이터 집어 넣기
+        // TODO : ?????? ?????? ???? ????
         Player = new Player();
+
+        Player.Town.Initialize();
     }
 }

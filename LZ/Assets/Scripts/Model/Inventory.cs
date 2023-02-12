@@ -4,39 +4,87 @@ using System.Linq;
 public class Inventory
 {
     // 현재 인벤토리 내 아이템 갯수
-    public int TotalCount => Items?.Values.Sum(e => e.Item2.StackCount) ?? 0;
+    public int TotalCount => Items?.Sum(e => e.StackCount) ?? 0;
 
     // 현재 인벤토리 최대 무게
     public float MaxWeight = 10.0f;
 
     // 현재 인벤토리 무게
-    public float CurrentWeight => Items?.Values.Sum(e => e.Item2.Weight) ?? 0.0f;
+    public float CurrentWeight => Items?.Sum(e => e.Weight) ?? 0.0f;
 
     // 획득한 아이템
-    // Key : UnqieuId, value : (index, item)
-    public Dictionary<int, (int, Item)> Items { get; set; } = new Dictionary<int, (int, Item)>();
+    public List<Item> Items { get; set; } = new List<Item>();
+
+    public Dictionary<int, int> History { get; set; } = new Dictionary<int, int>();
 
     // 아이템 획득
-    public void Add(int uniqueId)
+    public void Add(int uniqueId, int amount)
     {
         // 이미 존재한다면 아이템 StackCount++
-        if (Items.ContainsKey(uniqueId))
+        var found = Items.FirstOrDefault(e => e.UniqueId == uniqueId);
+        if (found == null)
         {
-            Items[uniqueId].Item2.StackCount++;
+            var item = new Item()
+            {
+                UniqueId = uniqueId,
+                StackCount = amount,
+                OnInventory = true,
+            };
+
+            Items.Add(item);
         }
         else
         {
-            // TODO : CreateFactory 추가
-            var item = new Item();
-
-            Items.Add(uniqueId, (Items.Count + 1, item));
+            found.StackCount += amount;
         }
+
+        if (!History.ContainsKey(uniqueId))
+        {
+            History.Add(uniqueId, 0);
+        }
+        History[uniqueId] += amount;
     }
 
-    // 인벤토리 비우기
-    public void Clear()
+    public void Reduce(int uniqueId, int amount)
     {
-        Items.Clear();
-        Items = new Dictionary<int, (int, Item)>();
+        var found = Items.FirstOrDefault(e => e.UniqueId == uniqueId);
+        if (found == null)
+        {
+            throw new System.Exception();
+        }
+
+        found.StackCount -= amount;
+    }
+
+    public void ArrangeItems()
+    {
+        if (!Items.Any()) { return; }
+
+        var upsertItems = new List<Item>();
+
+        foreach (var item in Items)
+        {
+            if (item.StackCount > 0)
+            {
+                upsertItems.Add(item);
+            }
+        }
+
+        Items = upsertItems;
+    }
+
+    public bool Found(int uniqueId)
+    {
+        return Items?.Any(e => e.UniqueId == uniqueId) ?? false;
+    }
+
+    public bool Many(int uniqueId)
+    {
+        if (!Found(uniqueId))
+        {
+            return false;
+        }
+
+        return Items.FirstOrDefault(e => e.UniqueId == uniqueId).StackCount >= 1;
     }
 }

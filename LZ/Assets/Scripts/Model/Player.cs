@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections.Generic;
 
 public class Player
@@ -27,11 +28,14 @@ public class Player
     // 배고픔
     public int Hungry { get; set; }
 
+    public Town Town { get; set; }
+
     public Inventory Inventory { get; set; }
 
     public Player()
     {
-
+        Town = new Town();
+        Inventory = new Inventory();
     }
 
     public void SetNextTime()
@@ -45,5 +49,10 @@ public class Player
             Date++;
             DayType = DayType.Dawn;
         }
+    }
+
+    public void RecoveryHP(int amount)
+    {
+        CurrentHP = Math.Max(CurrentHP + amount, MaxHP);
     }
 }

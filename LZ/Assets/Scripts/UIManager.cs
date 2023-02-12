@@ -7,7 +7,9 @@ public class UIManager : MonoSingleton<UIManager>
     [SerializeField] public UIMain UIMain;
     [SerializeField] public UITopNavi UITopNavi;
     [SerializeField] public UIBottomNavi UIBottomNavi;
-    
+
+
+    [SerializeField] public UICharacterStatus UICharacterStatus;
 
 
     [SerializeField] public UIEventStory UIEventStory;
@@ -15,4 +17,7 @@ public class UIManager : MonoSingleton<UIManager>
 
     [SerializeField] public UISlot UISlot;
     [SerializeField] public UIHistory UIHistory;
+    
+    [SerializeField] public UITown UITown;
+
 }
