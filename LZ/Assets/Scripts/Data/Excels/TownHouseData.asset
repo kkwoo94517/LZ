@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25caeaa70a558e24598887ddb1a6d052, type: 3}
+  m_Name: TownHouseData
+  m_EditorClassIdentifier: 
+  TownHouseDatas:
+  - HouseType: 1
+    DevName: "\uC911\uC2EC \uC5F4\uD53C"
+    OpenLevel: 1
+    DescribeString: 
+  - HouseType: 2
+    DevName: "\uAC70\uC8FC\uC9C0"
+    OpenLevel: 1
+    DescribeString: 
+  - HouseType: 3
+    DevName: "\uC800\uC7A5\uC18C"
+    OpenLevel: 1
+    DescribeString: 
+  - HouseType: 4
+    DevName: "\uC9C4\uB8CC\uC18C"
+    OpenLevel: 1
+    DescribeString: 
+  - HouseType: 5
+    DevName: "\uC5F0\uAD6C\uC18C"
+    OpenLevel: 1
+    DescribeString: 
+  - HouseType: 6
+    DevName: "\uD310\uB9E4 \uC0C1\uC810"
+    OpenLevel: 2
+    DescribeString: 
+  - HouseType: 7
+    DevName: "\uC784\uBB34\uC9C0"
+    OpenLevel: 2
+    DescribeString: 
+  - HouseType: 8
+    DevName: "\uACB0\uD22C\uC7A5"
+    OpenLevel: 5
+    DescribeString: 
+  - HouseType: 9
+    DevName: "\uCDE8\uC0AC\uC7A5"
+    OpenLevel: 2
+    DescribeString: 
+  - HouseType: 10
+    DevName: "\uC81C\uC7AC\uC18C"
+    OpenLevel: 3
+    DescribeString: 
+  - HouseType: 11
+    DevName: "\uC11D\uD0C4 \uAD11\uC0B0"
+    OpenLevel: 3
+    DescribeString: "\uBA38\uC2DC\uAE30 {0}, \uC800\uC2DC\uAE30{1}"

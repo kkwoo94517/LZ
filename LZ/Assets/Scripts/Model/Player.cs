@@ -4,38 +4,29 @@ using System.Collections.Generic;
 
 public class Player
 {
-    // 현재 챕터
-    public int Chapter { get; set; }
-
-    // 현재 날짜
-    public int Date { get; private set; } = 0;
-
-    // 오늘 날의 상태
+    public int Stage { get; set; } = 1;
+    public int Date { get; set; } = 1;
     public DayType DayType { get; private set; } = DayType.Night;
+    
+    public int Temperature { get; set; } = 0;
+    public int Happiness { get; set; } = 100;
+    public int UnHappiness { get; set; } = 0;
 
-    // 현재 체력
-    public int CurrentHP { get; set; }
-
-    // 최대 체력
-    public int MaxHP { get; set; }
-
-    // 불의 세기
-    public int FireRate { get; set; }
-
-    // 현재 온도
-    public int Temperature { get; set; }
-
-    // 배고픔
-    public int Hungry { get; set; }
+    public PlayerStatus Status { get; set; }
 
     public Town Town { get; set; }
 
     public Inventory Inventory { get; set; }
 
-    public Player()
+    public List<People> Party { get; set; }
+
+    public Player(CharacterStatusEntity statusEntity, CharacterLevelEntity levelEntity)
     {
         Town = new Town();
         Inventory = new Inventory();
+        Party = new List<People>();
+
+        Status = new PlayerStatus(statusEntity, levelEntity);
     }
 
     public void SetNextTime()
@@ -53,6 +44,6 @@ public class Player
 
     public void RecoveryHP(int amount)
     {
-        CurrentHP = Math.Max(CurrentHP + amount, MaxHP);
+        Status.CurrentHP = Math.Max(Status.CurrentHP + amount, Status.MaxHP);
     }
 }

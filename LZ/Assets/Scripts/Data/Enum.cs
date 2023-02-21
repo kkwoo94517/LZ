@@ -5,15 +5,31 @@ public enum DayType
     Night = 2,
 }
 
-public enum RegionType
-{
-
-}
-
 public enum ItemCategoryType
 {
     None = 0,
 
+}
+
+public enum ParcelType
+{
+    None = 0,
+    Item = 10000,
+    Status = 50000,
+    Property = 90000,
+}
+
+public enum RewardType
+{
+    None = 0,
+    ItemNone = 10000,
+    
+    StatusNone = 50000,
+    STR = 50001,
+    WIS = 50002,
+    CHA = 50003,
+
+    PropertyNone = 100000,
 }
 
 // ???? ?????? ???? (????????)
@@ -22,15 +38,6 @@ public enum DifficultyType
     Normal = 0,
     Hard = 1,
     Boss = 2,
-}
-
-
-// ?????? ???? ?????????? ????
-public enum AnimationType
-{
-    None = 0,
-    AddScore = 1,
-    Destory = 2,
 }
 
 // ?????? ????
@@ -73,7 +80,46 @@ public enum BodyDamageType
     Critical = 3, // ????????
 }
 
+public enum HouseType
+{
+    ThermalHull = 1,
+    House = 2,
+    Stockpiles = 3,
+    MedicalPost = 4,
+    Laboratory = 5,
+    SaleShop = 6,
+    TownMission = 7,
+    FightingArena = 8,
+    Cookhouse = 9,
+    Sawmill = 10,
+    CoalMine = 11,
+}
 
 
+public enum PropertyType
+{
+    None = 0,
+}
 
+public enum TileEventType
+{
+    None = 0,
+    Start = 1,
+    End = 2,
 
+}
+
+public enum StoryEventType
+{
+    None = 0,
+    Tutorial_1 = 1,
+    Tutorial_2 = 2,
+}
+
+public enum IntroButtonType
+{
+    None = 0,
+    NewGame = 1,
+    Continue = 2,
+    Exit = 3,
+}

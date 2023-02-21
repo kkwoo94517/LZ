@@ -35,4 +35,9 @@ public class UIInventoryItem : MonoBehaviour
 
         WeightText.text = $"{weightString} kg";
     }
+
+    public void DeactiveWeight()
+    {
+        WeightText.transform.parent.gameObject.SetActive(false);
+    }
 }

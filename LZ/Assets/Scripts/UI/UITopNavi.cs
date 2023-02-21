@@ -8,10 +8,31 @@ public class UITopNavi : MonoBehaviour
     [SerializeField] private Image DateIcon;
     [SerializeField] private Text DateText;
 
+    public void Refresh()
+    {
+        var player = GameManager.Instance.Player;
+
+        Happiness.fillAmount = player.Happiness / CommonConst.MAX_HAPPINESS;
+        UnHappiness.fillAmount = player.UnHappiness / CommonConst.MAX_HAPPINESS;
+    }
 
     public void SetDateUI(DayType dayType, int date)
     {
         StartCoroutine(Co_ChangeDay(dayType, date));
+    }
+
+    public void ChargeHappiness()
+    {
+        float goal = GameManager.Instance.Player.Happiness / (float)CommonConst.MAX_HAPPINESS;
+
+        StartCoroutine(Co_RefreshTopNavi(Happiness, goal));
+    }
+
+    public void ChargeUnHappiness()
+    {
+        float goal = GameManager.Instance.Player.UnHappiness / (float)CommonConst.MAX_UNHAPPINESS;
+
+        StartCoroutine(Co_RefreshTopNavi(UnHappiness, goal));
     }
 
     /// <summary>
@@ -63,6 +84,34 @@ public class UITopNavi : MonoBehaviour
 
         DateText.text = $"{date}ÀÏÂ÷\n{day}";
     }
+
+    private IEnumerator Co_RefreshTopNavi(Image image, float goal)
+    {
+        var fill = image.fillAmount < goal ? Time.deltaTime : -Time.deltaTime;
+
+        if (fill < 0)
+        {
+            while (image.fillAmount >= goal)
+            {
+                yield return new WaitForEndOfFrame();
+                image.fillAmount += fill * .6f;
+            }
+        }
+        else
+        {
+            while (image.fillAmount <= goal)
+            {
+                yield return new WaitForEndOfFrame();
+                image.fillAmount += fill * .6f;
+            }
+        }
+
+        image.fillAmount = goal;
+    }
+
+    [SerializeField] private Image Happiness;
+    [SerializeField] private Image UnHappiness;
+
 
     [SerializeField] private Sprite DawnSprite;
     [SerializeField] private Sprite DawnToDaySprite;

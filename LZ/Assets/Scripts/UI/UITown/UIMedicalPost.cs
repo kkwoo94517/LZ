@@ -3,20 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIMedicalPost : MonoBehaviour
+public class UIMedicalPost : UIResearchHouse
 {
-    [SerializeField] private Text PreviewText;
-    [SerializeField] private Text LevelText;
+    public override HouseType HouseType => HouseType.MedicalPost;
+
+    [SerializeField] public UIMedicalPostDetail UIDetail;
 
     public void OnClick_Detail()
     {
-        UIManager.Instance.UITown.SetDetailTitle("진료소");
-    }
+        base.OnClick_Detail("진료소");
 
-    public void SetPreview(string preview, string level)
-    {
-        // 회복 필요, 현재 입실 n명
-        PreviewText.text = preview;
-        LevelText.text = level;
+        UIDetail.gameObject.SetActive(true);
+        UIDetail.RefreshMedicalPeople();
     }
 }

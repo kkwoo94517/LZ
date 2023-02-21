@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635017ecabbf7134e968864b82493c9b, type: 3}
+  m_Name: AnswerData
+  m_EditorClassIdentifier: 
+  AnswerDatas:
+  - UniqueId: 1
+    ConditionRewardType: 0
+    ConditionAmount: 0
+    RewardType: 50001
+    RewardAmount: 1
+    Title: aa
+    Describe: asdfsdfasdf
+  - UniqueId: 2
+    ConditionRewardType: 0
+    ConditionAmount: 0
+    RewardType: 50002
+    RewardAmount: 1
+    Title: bb
+    Describe: asfdsadfasdfasdf
+  - UniqueId: 3
+    ConditionRewardType: 0
+    ConditionAmount: 0
+    RewardType: 50003
+    RewardAmount: 1
+    Title: cc
+    Describe: asdfasdfefsdfsdf
+  - UniqueId: 4
+    ConditionRewardType: 50001
+    ConditionAmount: 2
+    RewardType: 50001
+    RewardAmount: 1
+    Title: dd
+    Describe: 
+  - UniqueId: 5
+    ConditionRewardType: 50002
+    ConditionAmount: 1
+    RewardType: 50002
+    RewardAmount: 1
+    Title: ee
+    Describe: 
+  - UniqueId: 6
+    ConditionRewardType: 50003
+    ConditionAmount: 1
+    RewardType: 50003
+    RewardAmount: 1
+    Title: ff
+    Describe: 

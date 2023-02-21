@@ -8,16 +8,6 @@ public class UIMain : MonoBehaviour
 {
     public delegate void ChangeUIFunc();
 
-    private void Start()
-    {
-        StartCoroutine(Co_AniBG(MainBG, null));
-        StartCoroutine(Co_AniBG(CardBG, null));
-    }
-
-
-
-
-
     /// <summary>
     /// 화면 전환
     /// </summary>

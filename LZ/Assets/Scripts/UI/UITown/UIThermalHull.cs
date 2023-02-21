@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class UIThermalHull : MonoBehaviour
 {
-
-
-    [SerializeField] private Text PreviewText;
     [SerializeField] public UIThermalHullDetail UIDetail;
+    [SerializeField] private Text PreviewText;
 
     public void OnClick_Detail()
     {
         UIManager.Instance.UITown.SetDetailTitle("중심 타워");
+        UIManager.Instance.UITown.SetDetailIcon(null);
         UIManager.Instance.UITown.TurnOffActive();
 
         UIDetail.gameObject.SetActive(true);

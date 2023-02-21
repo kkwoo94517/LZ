@@ -2,135 +2,111 @@
 using System;
 using UnityEngine;
 
-public class Database : MonoBehaviour
+public class Database : MonoSingleton<Database>
 {
-    // Text 
-
-
-    [SerializeField] private ItemData ItemData;
-    [SerializeField] private ChapterData ChapterData;
+    //[SerializeField] private ItemData ItemData;
+    [SerializeField] private CharacterStatusData CharacterStatusData;
+    [SerializeField] private CharacterLevelData CharacterLevelData;
+    [SerializeField] private TownHouseData TownHouseData;
     [SerializeField] private StageData StageData;
-    [SerializeField] private AugmentedData AugmentedData;
-    [SerializeField] private StoryEventData StoryEventData;
-
 
     // Key : ItemUniqueId
-    public Dictionary<int, ItemEntity> ItemDataDict = new Dictionary<int, ItemEntity>();
-
-    // Key : Chapter
-    public Dictionary<int, ChapterEntity> ChapterDataDict = new Dictionary<int, ChapterEntity>();
-
-    // Key : Chapter
-    public Dictionary<int, List<StageEntity>> StageDataDict = new Dictionary<int, List<StageEntity>>();
-
-    // Key : UniqueId
-    public Dictionary<int, StoryEventEntity> StoryEventDataDict = new Dictionary<int, StoryEventEntity>();
-
-    // Key : UniqueId
-    public Dictionary<int, AugmentedEntity> AugmentedDataDict = new Dictionary<int, AugmentedEntity>();
+    //public Dictionary<int, ItemEntity> ItemDataDict = new Dictionary<int, ItemEntity>();
+    public Dictionary<int, CharacterStatusEntity> CharacterStatusDict = new Dictionary<int, CharacterStatusEntity>();
+    public Dictionary<int, List<CharacterLevelEntity>> CharacterLevelDict = new Dictionary<int, List<CharacterLevelEntity>>();
+    public Dictionary<HouseType, TownHouseEntity> TownHouseDict = new Dictionary<HouseType, TownHouseEntity>();
+    public Dictionary<int, List<StageEntity>> StageDict = new Dictionary<int, List<StageEntity>>();
 
 
-
-
-    public void Load()
+    public IEnumerator<string> LoadData()
     {
-        LoadItemData();
-        LoadChapterData();
-        LoadStageData();
-        LoadStoryEventData();
-        LoadAugmentedData();
+        yield return LoadStageData();
+        yield return LoadCharacterStatusData();
+        yield return LoadTownHouseData();
     }
 
-    private string LoadItemData()
+    //private string LoadItemData()
+    //{
+    //    ItemDataDict.Clear();
+    //    foreach (var data in ItemData.ItemDatas)
+    //    {
+    //        if (!ItemDataDict.ContainsKey(data.UniqueId))
+    //        {
+    //            ItemDataDict.Add(data.UniqueId, new ItemEntity(data));
+    //        }
+    //        else
+    //        {
+    //            Console.WriteLine($"ItemDataDict duplecated {data.UniqueId}");
+    //        }
+    //    }
+
+    //    return "가방에서 모든 아이템을 꺼내었다.";
+    //}
+
+    private string LoadCharacterStatusData()
     {
-        ItemDataDict.Clear();
-        foreach (var data in ItemData.ItemDatas)
+        CharacterStatusDict.Clear();
+        foreach (var data in CharacterStatusData.CharacterStatusDatas)
         {
-            if (!ItemDataDict.ContainsKey(data.UniqueId))
+            if (!CharacterStatusDict.ContainsKey(data.UniqueId))
             {
-                ItemDataDict.Add(data.UniqueId, new ItemEntity(data));
+                CharacterStatusDict.Add(data.UniqueId, data);
+
+                Console.WriteLine($"{data.UniqueId}");
             }
             else
             {
-                Console.WriteLine($"ItemDataDict duplecated {data.UniqueId}");
+                Console.WriteLine($"CharacterStatusDict duplecated {data.UniqueId}");
             }
         }
 
-        return "가방에서 모든 아이템을 꺼내었다.";
+        CharacterLevelDict.Clear();
+        foreach (var data in CharacterLevelData.CharacterLevelDatas)
+        {
+            if (!CharacterLevelDict.ContainsKey(data.UniqueId))
+            {
+                CharacterLevelDict.Add(data.UniqueId, new List<CharacterLevelEntity>());
+            }
+
+            CharacterLevelDict[data.UniqueId].Add(data);
+        }
+
+        return "모든 캐릭터들이 잠에서 깨어났다...! ";
     }
 
-    private string LoadChapterData()
+    private string LoadTownHouseData()
     {
-        ChapterDataDict.Clear();
-        foreach (var data in ChapterData.ChapterDatas)
+        TownHouseDict.Clear();
+        foreach (var data in TownHouseData.TownHouseDatas)
         {
-            if (!ChapterDataDict.ContainsKey(data.Chapter))
+            if (!TownHouseDict.ContainsKey(data.HouseType))
             {
-                ChapterDataDict.Add(data.Chapter, new ChapterEntity(data));
+                TownHouseDict.Add(data.HouseType, data);
+
+                Console.WriteLine($"{data.HouseType}");
             }
             else
             {
-                Console.WriteLine($"ChapterDataDict duplecated {data.Chapter}");
+                Console.WriteLine($"TownHouseDict duplecated {data.HouseType}");
             }
         }
 
-        return "정신 없게 난이도 설정 중";
+        return "분주한 건물들 사이로 빛이 새어나온다.";
     }
 
     private string LoadStageData()
     {
-        StageDataDict.Clear();
+        StageDict.Clear();
         foreach (var data in StageData.StageDatas)
         {
-            var stageData = new StageEntity(data);
+            if (!StageDict.ContainsKey(data.StageId))
+            {
+                StageDict.Add(data.StageId, new List<StageEntity>());
+            }
 
-            if (!StageDataDict.ContainsKey(data.Chapter))
-            {
-                StageDataDict.Add(data.Chapter, new List<StageEntity>() { stageData });
-            }
-            else
-            {
-                StageDataDict[data.Chapter].Add(stageData);
-            }
+            StageDict[data.StageId].Add(data);
         }
 
-        return "북적거리는 스테이지 설정 중";
-    }
-
-
-    private string LoadStoryEventData()
-    {
-        StoryEventDataDict.Clear();
-        foreach (var data in StoryEventData.StoryEventDatas)
-        {
-            if (!StoryEventDataDict.ContainsKey(data.UniqueId))
-            {
-                StoryEventDataDict.Add(data.UniqueId, new StoryEventEntity(data));
-            }
-            else
-            {
-                Console.WriteLine($"StoryEventDataDict duplecated {data.UniqueId}");
-            }
-        }
-
-        return "쓸만한 시나리오 뽑아내는 중";
-    }
-
-    private string LoadAugmentedData()
-    {
-        AugmentedDataDict.Clear();
-        foreach (var data in AugmentedData.AugmentedDatas)
-        {
-            if (!AugmentedDataDict.ContainsKey(data.UniqueId))
-            {
-                AugmentedDataDict.Add(data.UniqueId, new AugmentedEntity(data));
-            }
-            else
-            {
-                Console.WriteLine($"AugmentedDataDict duplecated {data.UniqueId}");
-            }
-        }
-
-        return "시스템 가동 준비 완료";
+        return "어두운 하늘이 드리우고, 폭설이 내리기 시작했다.";
     }
 }

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b12f0a1da49ea94c8696b3888bc9563, type: 3}
+  m_Name: CharacterLevelData
+  m_EditorClassIdentifier: 
+  CharacterLevelDatas:
+  - UniqueId: 1
+    Level: 1
+    Exp: 100
+    HP: 100
+    Search: 100
+  - UniqueId: 1
+    Level: 2
+    Exp: 120
+    HP: 110
+    Search: 110
+  - UniqueId: 1
+    Level: 3
+    Exp: 140
+    HP: 120
+    Search: 120
+  - UniqueId: 1
+    Level: 4
+    Exp: 170
+    HP: 130
+    Search: 130
+  - UniqueId: 1
+    Level: 5
+    Exp: 200
+    HP: 140
+    Search: 140
+  - UniqueId: 1
+    Level: 6
+    Exp: 240
+    HP: 150
+    Search: 150
+  - UniqueId: 1
+    Level: 7
+    Exp: 280
+    HP: 160
+    Search: 160
+  - UniqueId: 1
+    Level: 8
+    Exp: 330
+    HP: 170
+    Search: 170
+  - UniqueId: 1
+    Level: 9
+    Exp: 380
+    HP: 180
+    Search: 180
+  - UniqueId: 1
+    Level: 10
+    Exp: 440
+    HP: 190
+    Search: 190
+  - UniqueId: 1
+    Level: 11
+    Exp: 500
+    HP: 200
+    Search: 200
+  - UniqueId: 1
+    Level: 12
+    Exp: 590
+    HP: 210
+    Search: 210
+  - UniqueId: 1
+    Level: 13
+    Exp: 690
+    HP: 220
+    Search: 220

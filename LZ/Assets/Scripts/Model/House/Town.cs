@@ -6,7 +6,7 @@ public class Town
     // 중심 열피
     public ThermalHull ThermalHull { get; set; }
     // 거주지
-    public House House { get; set; }
+    public House House = new House();
     // 저장소
     public Stockpiles Stockpiles { get; set; }
     // 진료소
