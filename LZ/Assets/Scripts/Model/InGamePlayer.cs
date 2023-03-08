@@ -5,27 +5,48 @@ using UnityEngine;
 
 public class InGamePlayer
 {
-    public int X { get; set; } = 1;
-    public int Y { get; set; } = 0;
+    public int X { get; set; }
+    public int Y { get; set; }
 
-    public Stage Stage { get; set; }
-
-    public void InitStage(int stageId)
+    public void Initialize(int x, int y)
     {
-        Stage = new Stage
-        {
-            StageId = stageId,
-        };
+        X = x; Y = y;
     }
 
-    public bool IsNear(int x, int y)
+    public void Move(int x, int y)
     {
-        if ((X == x || X + 1 == x || X - 1 == x) &&
-            (Y == y || Y + 1 == y || Y - 1 == y))
+        X = x; Y = y;
+    }
+
+    public bool IsNear(int x, int y, out DirectionType direction)
+    {
+        direction = DirectionType.None;
+
+        if (X == x && Y == y)
         {
-            return true;
+            direction = DirectionType.None;
+        }
+        else if (X == x && Y < y + 1)
+        {
+            direction = DirectionType.Up;
+        }
+        else if (X == x && Y > y - 1)
+        {
+            direction = DirectionType.Down;
+        }
+        else if (X < x + 1 && Y == y)
+        {
+            direction = DirectionType.Right;
+        }
+        else if (X > x - 1 && Y == y)
+        {
+            direction = DirectionType.Left;
+        }
+        else
+        {
+            return false;
         }
 
-        return false;
+        return true;
     }
 }

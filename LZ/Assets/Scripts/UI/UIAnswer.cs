@@ -7,15 +7,33 @@ public class UIAnswer : MonoBehaviour
     private int SelectIndex;
     public bool OnSelect => SelectIndex != 0;
 
+    private bool LoadDone = false;
+    private bool NeedSelect = false;
 
-    public void LoadAnswerItems()
+    public void LoadAnswerItems(int answer1, int answer2, int answer3)
     {
         // TODO : µ¥ÀÌÅÍ ·Îµå
         SelectIndex = 0;
+        NeedSelect = false;
 
-        UIAnswerItem_1.SetAnswerText("¤±¤¤¤·", "¾î¤¿·ç¾î¤Ì¤©¾î¤Ì¤©", "°Ç°­ÇÔ", true);
-        UIAnswerItem_2.SetAnswerText("123", "¤À¤Ã´±·¯¤¿¤¤¤·¶ó", "", true);
-        UIAnswerItem_3.SetAnswerText("5857857", "", "¾Æ¸ô¶û", false);
+        if (answer1 != 0)
+        {
+            // Load Answer
+            NeedSelect = true;
+            UIAnswerItem_1.SetAnswerText("¤±¤¤¤·", "¾î¤¿·ç¾î¤Ì¤©¾î¤Ì¤©", "°Ç°­ÇÔ", true);
+        }
+        if (answer2 != 0)
+        {
+            NeedSelect = true;
+            UIAnswerItem_2.SetAnswerText("123", "¤À¤Ã´±·¯¤¿¤¤¤·¶ó", "", true);
+        }
+        if (answer3 != 0)
+        {
+            NeedSelect = true;
+            UIAnswerItem_3.SetAnswerText("5857857", "", "¾Æ¸ô¶û", false);
+        }
+
+        LoadDone = true;
     }
 
     public void ClearAnswerItems()
@@ -25,10 +43,27 @@ public class UIAnswer : MonoBehaviour
         UIAnswerItem_1.DisableAnswerItem();
         UIAnswerItem_2.DisableAnswerItem();
         UIAnswerItem_3.DisableAnswerItem();
+
+        LoadDone = false;
     }
 
     public void OnClick_Answer(int index)
     {
+        if (UIManager.Instance.IsChangeUI)
+        {
+            return;
+        }
+
+        if (!LoadDone)
+        {
+            return;
+        }
+
+        if (!NeedSelect)
+        {
+            return;
+        }
+
         SelectIndex = index;
 
         UIAnswerItem_1.SelectItem(index);

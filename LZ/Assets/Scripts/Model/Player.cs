@@ -4,17 +4,19 @@ using System.Collections.Generic;
 
 public class Player
 {
-    public int Stage { get; set; } = 1;
-    public int Date { get; set; } = 1;
+    public int Date { get; set; } = 0;
     public DayType DayType { get; private set; } = DayType.Night;
-    
     public int Temperature { get; set; } = 0;
     public int Happiness { get; set; } = 100;
     public int UnHappiness { get; set; } = 0;
 
+    public Stage Stage { get; set; }
+
     public PlayerStatus Status { get; set; }
 
     public Town Town { get; set; }
+
+    public Scenario Scenario { get; set; }
 
     public Inventory Inventory { get; set; }
 
@@ -27,6 +29,8 @@ public class Player
         Party = new List<People>();
 
         Status = new PlayerStatus(statusEntity, levelEntity);
+        Stage = new Stage();
+        Scenario = new Scenario();
     }
 
     public void SetNextTime()

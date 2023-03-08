@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c3780582b51c44996efb982384c822, type: 3}
+  m_Name: RegionData
+  m_EditorClassIdentifier: 
+  RegionDatas:
+  - RegionType: 1
+    DevName: "\uC678\uACFD"
+    Level: 1
+    Enable: 1
+  - RegionType: 2
+    DevName: "\uC0AC\uAC70\uB9AC"
+    Level: 2
+    Enable: 1
+  - RegionType: 3
+    DevName: "\uC232"
+    Level: 3
+    Enable: 1
+  - RegionType: 4
+    DevName: "\uACF5\uC6D0"
+    Level: 0
+    Enable: 0
+  - RegionType: 5
+    DevName: "\uBCD1\uC6D0"
+    Level: 0
+    Enable: 0
+  - RegionType: 6
+    DevName: "\uD559\uAD50"
+    Level: 0
+    Enable: 0
+  - RegionType: 7
+    DevName: "\uC544\uD30C\uD2B8"
+    Level: 0
+    Enable: 0
+  - RegionType: 8
+    DevName: "\uB300\uD615\uB9C8\uD2B8"
+    Level: 0
+    Enable: 0
+  - RegionType: 9
+    DevName: "\uC544\uD30C\uD2B8"
+    Level: 0
+    Enable: 0
+  - RegionType: 10
+    DevName: "\uC138\uD0C1\uC18C"
+    Level: 0
+    Enable: 0
+  - RegionType: 11
+    DevName: "\uC2DD\uB2F9"
+    Level: 0
+    Enable: 0
+  - RegionType: 12
+    DevName: "\uACF5\uC7A5"
+    Level: 0
+    Enable: 0
+  - RegionType: 13
+    DevName: "\uD130\uB110"
+    Level: 0
+    Enable: 0
+  - RegionType: 14
+    DevName: "\uAC15\uAC00"
+    Level: 0
+    Enable: 0

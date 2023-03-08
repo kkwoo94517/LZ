@@ -34,7 +34,7 @@ public class GameManager : MonoSingleton<GameManager>
         Player.Town.Initialize();
         InGameManager.Instance.Initialize();
         UIManager.Instance.UICharacterStatus.Refresh();
-        UIManager.Instance.UIBottomNavi.OnClick_NextTime();
+        UIManager.Instance.OnClick_NextTime();
     }
 
     public void ContinueGame()

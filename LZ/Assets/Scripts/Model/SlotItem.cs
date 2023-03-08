@@ -1,7 +1,7 @@
 ﻿using System;
 public class SlotItem
 {
-    // not zerobase
+    public int UniqueId { get; set; }
     public int X { get; set; }
     public int Y { get; set; }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,54 +9,72 @@ public class UIEventStory : MonoBehaviour
 {
     public delegate void UIStoryEndFunc();
 
-    [SerializeField] private Text TitleText;
     [SerializeField] private Text StoryText;
+    
     public float Speed = 0.2f;
+
+    private bool TextEnd = false;
     private bool IsSkip = false;
-    private bool OnTitle = false;
+    private int CurrentOrder = 0;
+    private List<ScenarioEntity> ScenarioDatas;
+    public bool LastScenario => ScenarioDatas.Max(e => e.Order) == CurrentOrder;
 
     public void OnClick_ActiveSkip()
     {
         IsSkip = true;
+        TextEnd = true;
     }
 
-    public void LoadEventStory(UIStoryEndFunc func)
+    public void LoadEventStory()
     {
-        // TODO : 파라미터가 아닌 데이터 여기서 불러오기
-        var title = "우와아아아앙";
-        var describe = "머ㅜㄴ여ㅑ무녀윰녕ㅁ너움넝\n\n\n\n\n asfdasdasd\n\nasdasdas";
+        var scenario = GameManager.Instance.Player.Scenario;
 
-        TitleText.text = title;
-
-        StartCoroutine(Co_ShowTitle());
-        StartCoroutine(Co_Typing(describe, func));
-    }
-
-    private IEnumerator Co_ShowTitle()
-    {
-        float progress = 0; float duration = 10f; float increment = 0.02f / duration;
-
-        OnTitle = false;
-        TitleText.color = Color.clear;
-        yield return new WaitForEndOfFrame();
-
-        while (progress < 1)
+        if (!Database.Instance.ScenarioDict.TryGetValue(scenario.GroupId, out ScenarioDatas))
         {
-            TitleText.color = Color.Lerp(Color.clear, Color.black, progress);
-            progress += increment;
-            yield return new WaitForEndOfFrame();
+            throw new System.Exception();
         }
+    }
 
-        OnTitle = true;
-        yield return null;
+    public void ShowEventStory()
+    {
+        ShowEventStory(() =>
+        {
+            var scenario = ScenarioDatas.FirstOrDefault(e => e.Order == CurrentOrder);
+
+            UIManager.Instance.UIAnswer.LoadAnswerItems(scenario.Answer_1, scenario.Answer_2, scenario.Answer_3);
+        });
+    }
+
+    private void ShowEventStory(UIStoryEndFunc func)
+    {
+        CurrentOrder++;
+        var scenario = ScenarioDatas.FirstOrDefault(e => e.Order == CurrentOrder);
+
+        StartCoroutine(Co_Typing(scenario.Describe, func));
+    }
+
+    public void OnClick_GoNextStory()
+    {
+        if (!TextEnd) { return; }
+        if (UIManager.Instance.IsChangeUI) { return; }
+
+        if (LastScenario)
+        {
+            if (!UIManager.Instance.UIAnswer.OnSelect) { return; }
+
+            UIManager.Instance.OnClick_NextTime();
+            GameManager.Instance.Player.Scenario.GroupId++;
+        }
+        else
+        {
+            ClearStory();
+            ShowEventStory();
+        }
     }
 
     private IEnumerator Co_Typing(string message, UIStoryEndFunc func)
     {
-        while (!OnTitle)
-        {
-            yield return new WaitForEndOfFrame();
-        }
+        yield return new WaitForEndOfFrame();
 
         for (int i = 0; i < message.Length; i++)
         {
@@ -70,13 +89,14 @@ public class UIEventStory : MonoBehaviour
             yield return new WaitForSeconds(Speed);
         }
 
+        TextEnd = true;
         func?.Invoke();
     }
 
     public void ClearStory()
     {
         IsSkip = false;
+        TextEnd = false;
         StoryText.text = string.Empty;
-        TitleText.text = string.Empty;
     }
 }

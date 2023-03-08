@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 8
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -18,13 +18,15 @@ MonoBehaviour:
     Answer_1: 0
     Answer_2: 0
     Answer_3: 0
-    Describe: aaa
+    Describe: "\u3147\u3134\u3141\u3139\u3134\u3147\u3139\u3134\u3147\uB77C\u3161\u3134\u3147\uB780\uC73C\uB780\uC73C\uB7BB\uB290\uB7B4\uB290\uB31C\uB974\u3151\u3134
+      \uB31C \uB290\uB31C\uB974\uB0D0\uB4DC\uB7B8 \u3151\u3134\uB4DC\uB7B4\uB290\uB31C\uB974\uB0D0\uC73C\uB780\uC73C\uB77C\uB290\u314F\uB974\uB0AD\uB974\uB098\uB4DC\uB7B8\uC73C\uB77C\uB2A5\u3139"
   - GroupId: 10000
     Order: 2
     Answer_1: 0
     Answer_2: 0
     Answer_3: 0
-    Describe: bbb
+    Describe: "\uB0D0\uB458\uB0D0\uB450\uB7B4\u3153\uB204\uB354\u3151\uB8E8\uB0E5\uB8E8\u3155\u3160\u3137\u3134\uB8CC\u3160\uB140\u315B\u3139\uC720\uB140\uC694\uB958\uB140\u315B\uC720\uB8CC\u3155\u3134\uC720\u3160\u3139\u3134\u3147
+      \uB824\uB1E8\uC720\uB824\u315B\u3134 \u3155\u315B\u3160\u3139\uB140\u315B\uC720\uB824\u3160\u3134"
   - GroupId: 10000
     Order: 3
     Answer_1: 1

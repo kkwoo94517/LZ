@@ -40,14 +40,13 @@ public enum DifficultyType
     Boss = 2,
 }
 
-// ?????? ????
 public enum GradeType
 {
     None = 0,
-    Bronze = 1,
-    Sliver = 2,
-    Gold = 3,
-    Platinum = 4,
+    A = 1,
+    B = 2,
+    C = 3,
+    D = 4,
 }
 
 public enum AugmentedType
@@ -106,7 +105,10 @@ public enum TileEventType
     None = 0,
     Start = 1,
     End = 2,
-
+    Event = 3,
+    NormalItems = 4,
+    SpecialItem = 5,
+    Monster = 6,
 }
 
 public enum StoryEventType
@@ -122,4 +124,32 @@ public enum IntroButtonType
     NewGame = 1,
     Continue = 2,
     Exit = 3,
+}
+
+public enum DirectionType
+{
+    None = 0,
+    Right = 1,
+    Left = 2,
+    Up = 3,
+    Down = 4,
+}
+
+public enum RegionType
+{
+    None = 0,
+    Outskirts = 1,
+    Intersection = 2,
+    Forest = 3,
+    Park = 4,
+    Hospital = 5,
+    School = 6,
+    Apartment = 7,
+    Supermarket = 8,
+    DepartmentStore = 9,
+    Laundromat = 10,
+    Restaurant = 11,
+    Factory = 12,
+    Tunnel = 13,
+    Riverside = 14,
 }

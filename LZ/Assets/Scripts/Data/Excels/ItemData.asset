@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ffee19ac07dd024790cd0800c89f307, type: 3}
+  m_Name: ItemData
+  m_EditorClassIdentifier: 
+  ItemDatas:
+  - UniqueId: 10001
+    Title: "\uBAA9\uC7AC"
+    Describe: 
+    Probability: 8000
+    Price: 1
+    Weight: 0.1
+  - UniqueId: 10002
+    Title: "\uC11D\uD0C4"
+    Describe: 
+    Probability: 8000
+    Price: 1
+    Weight: 0.1
+  - UniqueId: 40001
+    Title: "\uC2A4\uD398\uC15C"
+    Describe: 
+    Probability: 3000
+    Price: 5
+    Weight: 1

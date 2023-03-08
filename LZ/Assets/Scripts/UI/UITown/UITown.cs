@@ -16,6 +16,11 @@ public class UITown : MonoBehaviour
     [SerializeField] public UISaleShop UISaleShop;
     [SerializeField] public UICookhouse UICookhouse;
 
+    public void LoadTown()
+    {
+        this.gameObject.SetActive(true);
+    }
+
     public void SetDetailTitle(string title)
     {
         DetailTitle.text = title;

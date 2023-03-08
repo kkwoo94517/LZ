@@ -15,7 +15,25 @@ MonoBehaviour:
   StageDatas:
   - StageId: 1
     TileEventType: 1
+    Grade: 0
     StoryEventType: 1
   - StageId: 1
     TileEventType: 2
+    Grade: 0
     StoryEventType: 2
+  - StageId: 1
+    TileEventType: 4
+    Grade: 1
+    StoryEventType: 0
+  - StageId: 1
+    TileEventType: 5
+    Grade: 1
+    StoryEventType: 0
+  - StageId: 1
+    TileEventType: 6
+    Grade: 1
+    StoryEventType: 0
+  - StageId: 1
+    TileEventType: 3
+    Grade: 1
+    StoryEventType: 0

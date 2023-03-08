@@ -1,12 +1,9 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.U2D;
 using UnityEngine.UI;
 
-public class UISlotItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class UISlotItem : MonoBehaviour
 {
     public delegate void SlotFoundFunc();
 
@@ -14,55 +11,26 @@ public class UISlotItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     [SerializeField] private Color SlotActiveColor;
 
     [SerializeField] private Image SlotItemIcon;
+    [SerializeField] private Button SlotButton;
 
     private SlotItem SlotItem;
     public int X => SlotItem.X;
     public int Y => SlotItem.Y;
 
-    // TODO : 찾는 딜레이 시간
-    private float SearchTime = 0.0f;
-    private float SearchDelayTime = 1.0f;
     private bool isFound = false;
     private bool isSearch = false;
-    private bool isFoundHalf = false;
 
-    public void Update()
+    public void OnClick_Search()
     {
-        if (isFound)
+        if (isSearch || isFound || SlotItem == null)
         {
             return;
         }
 
-        if (isSearch)
-        {
-            SearchTime += Time.deltaTime / SearchDelayTime;
-
-            SlotImage.color = Color.Lerp(Color.white, Color.clear, SearchTime);
-
-            if (!isFoundHalf && SlotImage.color.a <= 0.75f)
-            {
-                isFoundHalf = true;
-                SlotItemIcon.color = Color.black;
-            }
-
-            if (SlotImage.color.a <= 0.1f)
-            {
-                ActiveSlotItem();
-                UIManager.Instance.UIHistory.AddHistoryItem();
-            }
-        }
-    }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        if (isFound) { return; }
-
         isSearch = true;
-    }
 
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        isSearch = false;
+        UIManager.Instance.UIGameMap.UIGameSlot.SearchQueue.Enqueue((X, Y));
+        UIManager.Instance.UIGameMap.UIGameSlot.Search();
     }
 
     public void LoadSlotAni(float delay)
@@ -77,7 +45,11 @@ public class UISlotItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             X = x,
             Y = y,
         };
+    }
 
+    public void SetUniqueId(int uniqueId)
+    {
+        SlotItem.UniqueId = uniqueId;
     }
 
     public void DrawSlot(Sprite sprite)
@@ -90,9 +62,10 @@ public class UISlotItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         this.gameObject.SetActive(isActive);
     }
 
-    private void ActiveSlotItem()
+    public void ActiveSlotItem()
     {
         isFound = true;
+        SlotButton.enabled = true;
         SlotImage.color = SlotActiveColor;
         SlotItemIcon.color = Color.white;
     }
@@ -100,11 +73,15 @@ public class UISlotItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void ClearSlotItem()
     {
         isFound = false;
-        isFoundHalf = false;
-        SearchTime = 0.0f;
         SlotImage.color = SlotActiveColor;
         SlotItemIcon.color = Color.clear;
         this.gameObject.SetActive(false);
+    }
+
+    public void DisableSlotItem()
+    {
+        SlotButton.enabled = false;
+        this.gameObject.SetActive(true);
     }
 
     private IEnumerator Co_Load(float delay)

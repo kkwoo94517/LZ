@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,16 +21,20 @@ public class UIMain : MonoBehaviour
                 UIManager.Instance.UIEventStory.ClearStory();
                 UIManager.Instance.UIAnswer.ClearAnswerItems();
 
-                ActiveEvent(true);
-                ActiveSlots(false);
+                UIManager.Instance.UIEventStory.LoadEventStory();
+                ActiveEvent();
+                UIManager.Instance.UIEventStory.ShowEventStory();
                 break;
             case DayType.Day:
-            case DayType.Night:
-                UIManager.Instance.UIHistory.ClearHistory();
-                UIManager.Instance.UISlot.ClearSlotItems();
+                //UIManager.Instance.UIHistory.ClearHistory();
 
-                ActiveEvent(false);
-                ActiveSlots(true);
+                UIManager.Instance.UIGameMap.LoadGameMap();
+                ActiveSlots();
+                break;
+            case DayType.Night:
+
+                UIManager.Instance.UITown.LoadTown();
+                ActiveTown();
                 break;
         }
     }
@@ -63,24 +66,47 @@ public class UIMain : MonoBehaviour
         yield return null;
     }
 
-    private void ActiveEvent(bool isActive)
+    private void ActiveEvent()
     {
-        EventStory.SetActive(isActive);
-        SelectCard.SetActive(isActive);
+        EventStory.SetActive(true);
+        SelectCard.SetActive(true);
+
+        GameMap.SetActive(false);
+        History.SetActive(false);
+        Town.SetActive(false);
+        Detail.SetActive(false);
     }
 
-    private void ActiveSlots(bool isActive)
+    private void ActiveSlots()
     {
-        Slots.SetActive(isActive);
-        History.SetActive(isActive);
+        GameMap.SetActive(true);
+        History.SetActive(true);
+
+        EventStory.SetActive(false);
+        SelectCard.SetActive(false);
+        Town.SetActive(false);
+        Detail.SetActive(false);
     }
 
+    private void ActiveTown()
+    {
+        Town.SetActive(true);
+        Detail.SetActive(true);
+
+        GameMap.SetActive(false);
+        History.SetActive(false);
+        EventStory.SetActive(false);
+        SelectCard.SetActive(false);
+    }
 
     [SerializeField] private GameObject EventStory;
     [SerializeField] private GameObject SelectCard;
 
-    [SerializeField] private GameObject Slots;
+    [SerializeField] private GameObject GameMap;
     [SerializeField] private GameObject History;
+
+    [SerializeField] private GameObject Town;
+    [SerializeField] private GameObject Detail;
 
     [SerializeField] private Image MainBG;
     [SerializeField] private Image CardBG;

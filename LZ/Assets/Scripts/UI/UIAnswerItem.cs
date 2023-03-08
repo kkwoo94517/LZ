@@ -25,6 +25,7 @@ public class UIAnswerItem : MonoBehaviour
         PropertyText.text = string.Empty;
         DescribeText.text = string.Empty;
         SelectBG.color = Color.gray;
+        AnswerBG.color = AnswerBGDisableColor;
     }
 
     public void SelectItem(int index)
@@ -37,6 +38,7 @@ public class UIAnswerItem : MonoBehaviour
         TitleText.color = isEnable ? Color.white : Color.gray;
         PropertyText.color = isEnable ? EnableColor : Color.gray;
         DescribeText.color = isEnable ? Color.white : Color.gray;
+        AnswerBG.color = AnswerBGEnableColor;
     }
 
     private IEnumerator Co_Slide()
@@ -64,4 +66,6 @@ public class UIAnswerItem : MonoBehaviour
 
     [SerializeField] private Image AnswerBG;
     [SerializeField] private Image SelectBG;
+    [SerializeField] private Color AnswerBGEnableColor;
+    [SerializeField] private Color AnswerBGDisableColor;
 }

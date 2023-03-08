@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class IntroController : MonoBehaviour
 {
-    [SerializeField] private UIIntroButton UIIntroButton;
     [SerializeField] private GameObject Intro;
     [SerializeField] private GameObject InGame;
     [SerializeField] private Text LoadDataText;
@@ -28,7 +27,7 @@ public class IntroController : MonoBehaviour
             var doneText = datas.Current;
 
             LoadDataText.text = doneText;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.1f);
         }
 
         LoadDone = true;
